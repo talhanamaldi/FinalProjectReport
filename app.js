@@ -6,7 +6,7 @@ app.use(express.static("public"));
 
 
 app.get("/", function(req, res) {
-    const filePath = path.resolve(__dirname, 'index.html');
+    const filePath = path.resolve(__dirname, 'home.html');
     res.sendFile(filePath);
 });
 
