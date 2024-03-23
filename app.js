@@ -16,7 +16,7 @@ app.get("/proposal.html", function(req, res) {
 });
 
 app.get("/specification.html", function(req, res) {
-    const filePath = path.resolve(__dirname, '/specification.html');
+    const filePath = path.resolve(__dirname, 'specification.html');
     res.sendFile(filePath);
 });
 
