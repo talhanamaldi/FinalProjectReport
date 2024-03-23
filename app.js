@@ -10,6 +10,16 @@ app.get("/", function(req, res) {
     res.sendFile(filePath);
 });
 
+app.get("/proposal.html", function(req, res) {
+    const filePath = path.resolve(__dirname, 'proposal.html');
+    res.sendFile(filePath);
+});
+
+app.get("/specification.html", function(req, res) {
+    const filePath = path.resolve(__dirname, '/specification.html');
+    res.sendFile(filePath);
+});
+
 app.listen(3000, function() {
     console.log("Server started on port 3000");
   });
