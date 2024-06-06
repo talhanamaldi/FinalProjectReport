@@ -35,6 +35,11 @@ app.get("/backlog.html", function(req, res) {
     res.sendFile(filePath);
 });
 
+app.get("/workplan.html", function(req, res) {
+    const filePath = path.resolve(__dirname, 'workplan.html');
+    res.sendFile(filePath);
+});
+
 app.listen(3000, function() {
     console.log("Server started on port 3000");
   });
