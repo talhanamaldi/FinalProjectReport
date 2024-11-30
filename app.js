@@ -30,6 +30,11 @@ app.get("/HighLevelDesign.html", function(req, res) {
     res.sendFile(filePath);
 });
 
+app.get("/LowLevelDesign.html", function(req, res) {
+    const filePath = path.resolve(__dirname, 'LowLevelDesign.html');
+    res.sendFile(filePath);
+});
+
 app.get("/backlog.html", function(req, res) {
     const filePath = path.resolve(__dirname, 'backlog.html');
     res.sendFile(filePath);
